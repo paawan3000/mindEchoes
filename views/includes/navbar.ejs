@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top  ">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="/home"><b>MindEchoes</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="text-center w-100">
+            <ul class="navbar-nav justify-content-center">
+                <li class="nav-item ">
+                  <a class="nav-link active" href="/home">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/journal">JOURNAL</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="/journal/new">Add New JOURNAL</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="/myJournals">ENTRIES</a>
+                </li>
+              </ul>
+          
+        </div>
+        <% if(currUser){ %>
+          <div class="text-center">
+            <a href="/auth/logout" class="btn btn-success " style="width: 100px;">logout <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+
+        <% } %>
+      </div>
+
+      
+    </div>
+  </nav>
